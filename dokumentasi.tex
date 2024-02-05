@@ -1,0 +1,48 @@
+
+\documentclass{article}
+\usepackage[margin=0cm, top=0cm, bottom=0cm, outer=0cm, inner=0cm, portrait, a4paper]{geometry}
+\pagestyle{empty}
+
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{titling}
+
+% Remove space before and after the title
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}}
+
+% Remove space before and after the author
+\preauthor{}
+\postauthor{}
+
+% Remove space before and after the date
+% \predate{}
+% \postdate{}
+
+\title{Dokumentasi Pemasangan AC}
+\author{}
+\date{}
+
+\begin{document}
+
+% Adjust left and right margins specifically for the title
+\newgeometry{left=2cm, right=2cm}
+
+\begin{figure}
+
+\maketitle
+\vspace*{-10pt}
+\thispagestyle{empty} % Remove page numbers
+
+\captionsetup[subfigure]{labelformat=empty}
+\captionsetup{labelformat=empty}
+\centering\hfill
+ \subfloat[][]{\includegraphics[width=0.4\textwidth, height=8cm]{files//20240116_080102.jpg}}\hspace{0.5cm}
+ \subfloat[][]{\includegraphics[width=0.4\textwidth, height=8cm]{files//Black White Simple Creative Agency Logo.png}}\hfill\null\\
+\hfill
+ \subfloat[][]{\includegraphics[width=0.4\textwidth, height=8cm]{files//carton-boxes.jpg}}\hspace{0.5cm}
+ \subfloat[][]{\includegraphics[width=0.4\textwidth, height=8cm]{blank.png}}\hfill\null\\
+\hfill
+\end{figure}
+
+\restoregeometry\end{document}
