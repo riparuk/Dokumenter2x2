@@ -62,7 +62,7 @@ def index(msg=None):
         # Tampilkan informasi tentang file yang diunggah
         files_to_delete += [folder + f for f in os.listdir(folder)]
 
-        # delete_files(files_to_delete)
+        delete_files(files_to_delete)
         
         return response
 
@@ -107,7 +107,7 @@ def verification_files(folder):
                         return False
                     
                 zip_ref.extractall(folder)
-            verification_files(folder)
+            # verification_files(folder)
 
         if file.lower().endswith(('.png', '.jpg', '.jpeg')):
             # Periksa ukuran file, misalnya, jika lebih besar dari 500 kb, kompres
