@@ -2,8 +2,6 @@ import os
 import subprocess
 import sys
 
-from main import render_template
-
 def generate(title, images_folder, output_filename):
     #dont using . if it is current directory
     blank_path = 'blank.png'

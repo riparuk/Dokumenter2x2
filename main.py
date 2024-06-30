@@ -30,6 +30,8 @@ def index(msg=None):
             return 'No selected file'
         
         folder = 'files/'
+        if not os.path.exists(folder):
+            os.makedirs(folder)
         output = "dokumentasi"
 
 
